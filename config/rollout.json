@@ -1,0 +1,31 @@
+{
+  "flags": {
+    "new_checkout": {
+      "description": "새 결제 화면",
+      "enabled": true,
+      "environments": { "development": 100, "staging": 50, "production": 10 },
+      "allowUsers": ["user-0001"],
+      "allowGroups": ["beta"]
+    },
+    "dark_mode": {
+      "description": "다크 모드 UI",
+      "enabled": true,
+      "environments": { "development": 100, "staging": 100, "production": 30 },
+      "allowUsers": [],
+      "allowGroups": ["employee"]
+    },
+    "recommendation_v2": {
+      "description": "추천 알고리즘 v2",
+      "enabled": true,
+      "environments": { "development": 100, "staging": 20, "production": 0 },
+      "allowUsers": ["user-0002"],
+      "allowGroups": []
+    }
+  },
+  "experiments": {
+    "checkout_button_color": {
+      "description": "결제 버튼 색상 A/B 테스트",
+      "variants": { "control": 50, "treatment": 50 }
+    }
+  }
+}

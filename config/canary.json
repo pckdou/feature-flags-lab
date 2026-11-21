@@ -1,0 +1,34 @@
+{
+  "flag": "new_checkout",
+  "stages": [1, 10, 50, 100],
+  "population": 2000,
+  "requestsPerUser": 5,
+  "checksPerStage": 3,
+  "seed": 42,
+  "healthThresholds": {
+    "maxErrorRate": 0.03,
+    "maxP95LatencyMs": 400,
+    "minSamples": 50
+  },
+  "scenarios": {
+    "healthy": {
+      "description": "모든 단계에서 정상",
+      "baseError": 0.005,
+      "baseLatency": 180
+    },
+    "error_spike": {
+      "description": "10% 단계부터 에러율 급증",
+      "baseError": 0.005,
+      "baseLatency": 180,
+      "faultFromStage": 10,
+      "faultError": 0.08
+    },
+    "latency_regression": {
+      "description": "50% 단계부터 응답 지연 악화",
+      "baseError": 0.005,
+      "baseLatency": 180,
+      "faultFromStage": 50,
+      "faultLatency": 900
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "flag": "new_checkout",
+  "percentage": 0,
+  "status": "rolled_back",
+  "scenario": "latency_regression",
+  "failedStage": 50,
+  "reasons": [
+    "p95 지연 초과 (1162ms > 400ms)"
+  ]
+}

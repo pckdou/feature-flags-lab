@@ -1,0 +1,12 @@
+{
+  "name": "feature-flags-lab",
+  "version": "1.0.0",
+  "description": "11주차 Feature Flags 및 점진적 배포 실습",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "report": "node src/report.js",
+    "canary": "node src/canary/run-canary.js"
+  },
+  "license": "ISC"
+}

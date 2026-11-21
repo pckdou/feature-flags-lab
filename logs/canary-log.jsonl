@@ -1,0 +1,45 @@
+{"ts":"2026-11-21T06:56:40.045Z","type":"canary_start","scenario":"healthy","flag":"new_checkout","stages":[1,10,50,100]}
+{"ts":"2026-11-21T06:56:40.047Z","type":"stage_start","scenario":"healthy","stage":1}
+{"ts":"2026-11-21T06:56:40.056Z","type":"health_check","scenario":"healthy","stage":1,"round":1,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":245,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.062Z","type":"health_check","scenario":"healthy","stage":1,"round":2,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":228,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.066Z","type":"health_check","scenario":"healthy","stage":1,"round":3,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.067Z","type":"promote","scenario":"healthy","stage":1}
+{"ts":"2026-11-21T06:56:40.067Z","type":"stage_start","scenario":"healthy","stage":10}
+{"ts":"2026-11-21T06:56:40.074Z","type":"health_check","scenario":"healthy","stage":10,"round":1,"users":187,"requests":935,"errorRate":0.0011,"p95LatencyMs":232,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.078Z","type":"health_check","scenario":"healthy","stage":10,"round":2,"users":187,"requests":935,"errorRate":0.0053,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.081Z","type":"health_check","scenario":"healthy","stage":10,"round":3,"users":187,"requests":935,"errorRate":0.0032,"p95LatencyMs":232,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.082Z","type":"promote","scenario":"healthy","stage":10}
+{"ts":"2026-11-21T06:56:40.083Z","type":"stage_start","scenario":"healthy","stage":50}
+{"ts":"2026-11-21T06:56:40.088Z","type":"health_check","scenario":"healthy","stage":50,"round":1,"users":1005,"requests":5025,"errorRate":0.0048,"p95LatencyMs":232,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.093Z","type":"health_check","scenario":"healthy","stage":50,"round":2,"users":1005,"requests":5025,"errorRate":0.0042,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.099Z","type":"health_check","scenario":"healthy","stage":50,"round":3,"users":1005,"requests":5025,"errorRate":0.0032,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.099Z","type":"promote","scenario":"healthy","stage":50}
+{"ts":"2026-11-21T06:56:40.100Z","type":"stage_start","scenario":"healthy","stage":100}
+{"ts":"2026-11-21T06:56:40.107Z","type":"health_check","scenario":"healthy","stage":100,"round":1,"users":2000,"requests":10000,"errorRate":0.0041,"p95LatencyMs":232,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.112Z","type":"health_check","scenario":"healthy","stage":100,"round":2,"users":2000,"requests":10000,"errorRate":0.0042,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.118Z","type":"health_check","scenario":"healthy","stage":100,"round":3,"users":2000,"requests":10000,"errorRate":0.0049,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.118Z","type":"promote","scenario":"healthy","stage":100}
+{"ts":"2026-11-21T06:56:40.119Z","type":"canary_complete","scenario":"healthy","finalPercentage":100}
+{"ts":"2026-11-21T06:56:40.120Z","type":"canary_start","scenario":"error_spike","flag":"new_checkout","stages":[1,10,50,100]}
+{"ts":"2026-11-21T06:56:40.120Z","type":"stage_start","scenario":"error_spike","stage":1}
+{"ts":"2026-11-21T06:56:40.124Z","type":"health_check","scenario":"error_spike","stage":1,"round":1,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":245,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.128Z","type":"health_check","scenario":"error_spike","stage":1,"round":2,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":228,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.131Z","type":"health_check","scenario":"error_spike","stage":1,"round":3,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.132Z","type":"promote","scenario":"error_spike","stage":1}
+{"ts":"2026-11-21T06:56:40.132Z","type":"stage_start","scenario":"error_spike","stage":10}
+{"ts":"2026-11-21T06:56:40.138Z","type":"health_check","scenario":"error_spike","stage":10,"round":1,"users":187,"requests":935,"errorRate":0.077,"p95LatencyMs":232,"healthy":false,"reasons":["에러율 초과 (7.7% > 3.0%)"]}
+{"ts":"2026-11-21T06:56:40.139Z","type":"rollback","scenario":"error_spike","failedStage":10,"round":1,"to":0,"reasons":["에러율 초과 (7.7% > 3.0%)"]}
+{"ts":"2026-11-21T06:56:40.140Z","type":"canary_start","scenario":"latency_regression","flag":"new_checkout","stages":[1,10,50,100]}
+{"ts":"2026-11-21T06:56:40.141Z","type":"stage_start","scenario":"latency_regression","stage":1}
+{"ts":"2026-11-21T06:56:40.145Z","type":"health_check","scenario":"latency_regression","stage":1,"round":1,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":245,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.149Z","type":"health_check","scenario":"latency_regression","stage":1,"round":2,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":228,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.152Z","type":"health_check","scenario":"latency_regression","stage":1,"round":3,"users":22,"requests":110,"errorRate":0,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.152Z","type":"promote","scenario":"latency_regression","stage":1}
+{"ts":"2026-11-21T06:56:40.153Z","type":"stage_start","scenario":"latency_regression","stage":10}
+{"ts":"2026-11-21T06:56:40.158Z","type":"health_check","scenario":"latency_regression","stage":10,"round":1,"users":187,"requests":935,"errorRate":0.0011,"p95LatencyMs":232,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.161Z","type":"health_check","scenario":"latency_regression","stage":10,"round":2,"users":187,"requests":935,"errorRate":0.0053,"p95LatencyMs":233,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.165Z","type":"health_check","scenario":"latency_regression","stage":10,"round":3,"users":187,"requests":935,"errorRate":0.0032,"p95LatencyMs":232,"healthy":true,"reasons":[]}
+{"ts":"2026-11-21T06:56:40.165Z","type":"promote","scenario":"latency_regression","stage":10}
+{"ts":"2026-11-21T06:56:40.166Z","type":"stage_start","scenario":"latency_regression","stage":50}
+{"ts":"2026-11-21T06:56:40.171Z","type":"health_check","scenario":"latency_regression","stage":50,"round":1,"users":1005,"requests":5025,"errorRate":0.0048,"p95LatencyMs":1162,"healthy":false,"reasons":["p95 지연 초과 (1162ms > 400ms)"]}
+{"ts":"2026-11-21T06:56:40.171Z","type":"rollback","scenario":"latency_regression","failedStage":50,"round":1,"to":0,"reasons":["p95 지연 초과 (1162ms > 400ms)"]}
